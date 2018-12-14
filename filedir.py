@@ -1,0 +1,18 @@
+import os
+from pathlib import Path
+
+rootDir = "E:\\.Tutorial & Others\\Web Development Tutorials\\Game Development Tutorials"
+
+for dirName, subdirList, fileList in os.walk(rootDir):
+    # print('Found directory: %s' % dirName)
+    directory_path = Path(dirName)
+    # print(d)
+    for each_file_path in directory_path.glob('*.vtt'):
+        # print(f'removing {each_file_path}')
+        each_file_path.unlink()
+
+    for each_file_path in directory_path.glob('*.srt'):
+        # print(f'removing {each_file_path}')
+        each_file_path.unlink()
+print("=="*30)
+print('Done!!!')
