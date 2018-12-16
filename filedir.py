@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-rootDir = "E:\\Machine Learning n Data Science\\.Jose Portilla\\Python for Data Science and Machine Learning Bootcamp"
+rootDir = "E:\\Game Development Tutorials"
 
 for dirName, subdirList, fileList in os.walk(rootDir):
     # print('Found directory: %s' % dirName)
